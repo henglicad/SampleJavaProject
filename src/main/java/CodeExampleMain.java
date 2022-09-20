@@ -1,4 +1,5 @@
 import badcode.BadCode;
+import badcode.SumAverage;
 
 public class CodeExampleMain {
 
@@ -7,6 +8,10 @@ public class CodeExampleMain {
         int array[] = {1, 2, 3};
 
         BadCode bc = new BadCode();
-        bc.PRINTsumandAVERAGE(array);
+        SumAverage sumAverage = bc.getSumAndAverage(array);
+
+        
+        System.out.println("Sum: " + sumAverage.getSum());
+        System.out.println("Average: " + sumAverage.getAverage());
     }
 }

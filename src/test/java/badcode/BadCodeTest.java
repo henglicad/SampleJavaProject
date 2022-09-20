@@ -13,14 +13,16 @@ class BadCodeTest {
     }
 
     @org.junit.jupiter.api.Test
-    void PRINTsumandAVERAGE() {
+    void printSumAndAverage() {
         int array[] = {2, 3, 4};
-        int return_value = 0;
+        int sum = 9;
+        int average = 3;
 
         BadCode bc = new BadCode();
+        SumAverage sumAverage = bc.getSumAndAverage(array);
+        
+        assertEquals(sumAverage.getSum(), sum);
+        assertEquals(sumAverage.getAverage(), average);
 
-        return_value = bc.PRINTsumandAVERAGE(array);
-
-        assertEquals(0, return_value);
     }
 }
