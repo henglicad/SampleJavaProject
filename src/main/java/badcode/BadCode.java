@@ -6,6 +6,11 @@ public class BadCode {
     public int PRINTsumandAVERAGE(int x[]) {
         int sum = 0;
         int average = 0;
+        if (x.length == 0) {
+            System.out.println("Sum: " + sum);
+            System.out.println("Average: " + average);
+            return 0;
+        }
 
         for (int i = 0; i < x.length; i++) {
             sum += x[i];
